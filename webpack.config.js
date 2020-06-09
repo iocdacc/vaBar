@@ -12,10 +12,10 @@ module.exports = merge(template, {
     index: './src/js/index.js',
   },
   output: {
-    filename: 'js/[name].[hash].js',
+    filename: 'js/vsBar.min.js',
     path: path.resolve(__dirname, 'dist'),
     // library: 'index',
-    // libraryTarget: 'umd'
+    libraryTarget: 'umd'
   },
   externals: {
 
@@ -29,7 +29,7 @@ module.exports = merge(template, {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].[hash].css',
+      filename: 'css/[name].css',
     }),
   ],
   module: {
