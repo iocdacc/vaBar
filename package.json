@@ -1,7 +1,7 @@
 {
   "name": "vsbar",
-  "version": "1.0.0",
-  "main": "/dist/js/index.js",
+  "version": "1.0.9",
+  "main": "dist/js/vsBar.min.js",
   "repository": "git@github.com:iocdacc/old-js.git",
   "author": "iocdacc <iocdacc@gmail.com>",
   "license": "MIT",
