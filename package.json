@@ -1,6 +1,6 @@
 {
   "name": "vsbar",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "main": "dist/js/vsBar.min.js",
   "repository": "git@github.com:iocdacc/old-js.git",
   "author": "iocdacc <iocdacc@gmail.com>",
@@ -10,9 +10,7 @@
     "start": "webpack-dev-server --open",
     "build": "webpack"
   },
-  "dependencies": {
-    "jquery": "^3.5.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
