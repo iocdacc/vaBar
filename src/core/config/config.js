@@ -19,9 +19,15 @@ export default function (){
 
   vsBar.config = defaultConfig
 
-  if(!document.getElementsByClassName(vsBar.config.name)[0]) return
+  let barBox
+  if (vsBar.config.name instanceof Element) {
+    barBox = vsBar.config.name
+  }else if(document.getElementsByClassName(vsBar.config.name)[0]){
+    barBox = document.getElementsByClassName(vsBar.config.name)[0]
+  }else{
+    return
+  }
 
-  let barBox = document.getElementsByClassName(vsBar.config.name)[0]
   let canvas = document.createElement('canvas')
   barBox.appendChild(canvas)
   vsBar.config.cvsDom = canvas
