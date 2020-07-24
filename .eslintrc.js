@@ -1,10 +1,7 @@
 module.exports = {
-  parserOptions: {
-    parser: "esprima", 
-    ecmaVersion: 6
-  },
   extends: [
-
+    'alloy',
+    'eslint:recommended',
   ],
   env: {
       // Your environments (which contains several predefined global variables)

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/reset.css.css">
     <style>
       #cvs{
         width: 300px;
@@ -16,11 +16,12 @@
   <body>
     <canvas id="cvs"></canvas>
     <canvas id="cvs2"></canvas>
-    <script src="js/vsBar.min.js" type="text/javascript"></script>
+    <script src="../dist/js/vsBar.js"></script>
     <script>
-      let bar = new vsBar({
+      let bar = new VsBar({
         color: '#000',
-        cvsDom: cvs
+        cvsDom: cvs,
+        autoPlay: true
       })
     </script>
   </body>

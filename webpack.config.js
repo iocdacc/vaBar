@@ -8,15 +8,16 @@ const template = require('./webpack.config.template.js');
 
 module.exports = merge(template, {
   mode: 'development',
-  //mode: 'production',
+  // mode: 'production',
   entry: {
-    index: './src/js/index.js',
+    vsBar: './src/vsBar.js',
   },
   output: {
-    filename: 'js/vsBar.min.js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
-    // library: 'index',
-    libraryTarget: 'umd'
+    library: 'VsBar',
+    libraryTarget: 'umd',
+    libraryExport: 'default',
   },
   externals: {
 
