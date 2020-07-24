@@ -1,6 +1,6 @@
 {
   "name": "vsbar",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": "dist/vsBar.js",
   "repository": "git@github.com:iocdacc/old-js.git",
   "author": "iocdacc <iocdacc@gmail.com>",
