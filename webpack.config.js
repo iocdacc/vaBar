@@ -13,7 +13,7 @@ module.exports = merge(template, {
     vsBar: './src/vsBar.js',
   },
   output: {
-    filename: 'js/[name].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     library: 'VsBar',
     libraryTarget: 'umd',
