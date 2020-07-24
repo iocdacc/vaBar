@@ -7,8 +7,8 @@ const merge = require('webpack-merge');
 const template = require('./webpack.config.template.js');
 
 module.exports = merge(template, {
-  mode: 'development',
-  // mode: 'production',
+  //mode: 'development',
+  mode: 'production',
   entry: {
     vsBar: './src/vsBar.js',
   },
